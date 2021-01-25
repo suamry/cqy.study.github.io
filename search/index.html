@@ -1,42 +1,53 @@
 <!doctype html>
-<html lang="{{ config.language }}">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
-<title>{{ title }}</title>
-<base href="{{ config.root }}">
+<title>巧遇到巧玉</title>
+<base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="{{ url_trim(url) }}">
-<link rel="icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}">
-{% if theme.pwa.manifest %}
-<link rel="manifest" href="{{ url_for('manifest.json') }}">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-{% endif %}
-{{ open_graph({ image: page.thumbnail || theme.profile.avatar }) | safe }}
-{% if theme.seo.structured_data %}
-{{ structured_data(page) | safe }}
-{% endif %}
-{% if config.feed and config.feed.path %}
-<link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ url_for(config.feed.path) }}">
-{% endif %}
-{{ theme.styles | safe }}
-{{ css('theme.' + theme.runtime.themeHash) | safe }}
-{{ js('config.' + theme.runtime.configHash) | safe }}
-{% if theme.ga %}
-{{ ga(theme.ga) | safe }}
-{% endif %}
-<meta name="generator" content="Hexo 5.3.0">
+<link rel="canonical" href="http://yoursite.com/search/">
+<link rel="icon" type="image/x-icon" href="/favicon32.ico">
+
+<meta name="description" content="看着很厉害，又好看就完事了">
+<meta property="og:type" content="website">
+<meta property="og:title" content="巧遇到巧玉">
+<meta property="og:url" content="http://yoursite.com/search/index.html">
+<meta property="og:site_name" content="巧遇到巧玉">
+<meta property="og:description" content="看着很厉害，又好看就完事了">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/avatar.jpg">
+<meta property="article:author" content="Sua-cqy">
+<meta property="article:tag" content="巧遇到巧玉了">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/avatar.jpg">
+
+
+<link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d6ae91d5e735d1cc1e8c.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/theme.bc78bd5649d5382c09e2.css">
+
+
+<script src="/config.0b5818422bb8d4a1165e.js"></script>
+
+
+<script async src="//www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','UA-00000000-0');</script>
+
+<meta name="generator" content="Hexo 4.2.1">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
-<body lang="{{ config.language }}">
-<{{ theme.runtime.selector }}></{{ theme.runtime.selector }}>
-{{ theme.scripts | safe }}
+<body lang="zh-Hans">
+<is-a></is-a>
+<script src="/runtime.1720a40670866f12654e.js"></script>
+<script src="/polyfills.69a7b8a907a7ac9da988.js"></script>
+<script src="/main.afaf3882c4354b8bfcf3.js"></script>
 <!--崩溃欺骗-->
 <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
 <!--评论-->
 <script type="text/javascript" src="/js/src/Valine.min.js"></script>
 
-{{live2d}}
+function () { [native code] }
 
 
 <!-- 网易云歌词 -->
